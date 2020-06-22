@@ -18,7 +18,7 @@ class UserAgentParser
 
     public function __construct($basePath, $userAgent = null)
     {
-        if (!$userAgent && isset($_SERVER['HTTP_USER_AGENT'])) {
+        if (!$userAgent) {
             $userAgent = $_SERVER['HTTP_USER_AGENT'];
         }
 
